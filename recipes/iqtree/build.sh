@@ -7,6 +7,7 @@ if [ `uname -s` == "Darwin" ];
 then
     export CMAKE_C_COMPILER=clang
     export CMAKE_CXX_COMPILER=clang++
+    export MACOSX_DEPLOYMENT_TARGET=10.9
 fi
 
 mkdir build
