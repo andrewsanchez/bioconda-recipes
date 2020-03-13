@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
 
 source:
   url: https://github.com/Cibiv/IQ-TREE/archive/v{{ version }}.tar.gz
@@ -19,11 +19,7 @@ requirements:
   host:
     - eigen
     - zlib
-    - clangdev  # [osx]
-    - openmp 4.0.*  # [osx]
-  run:
-    - zlib
-    - openmp >=4.0  # [osx]
+    - llvm-openmp >=9  # [osx]
 
 test:
   commands:
